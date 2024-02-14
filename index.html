@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        nav bar with bootstrap
+    </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- link for CSS file -->
+    <link rel="stylesheet" href="booking.css">
+
+    <!-- link for icon from fontawsom cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- java link for bootstarp-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <!-- screen size box-->
+    <div class="main">
+
+        <!-- top box  -->
+        <div class="top_part ">
+
+            <!-- starting nav bar-->
+            <nav class="nav_bar  pt-2">
+                <div class="booking">
+                    <!-- top row (left side)  booking.com -->
+                    <div class="display-6 fw-400 text-white">Booking.com </div>
+
+                    <!-- top row (right side)  PKR Flage ? Register and sign in button -->
+                    <div class=" right_side">
+                        <span class=" corner text-white mx-3"> PKR</span>
+                        <span class=" corner text-white mx-3 "><i class="fa-solid fa-certificate"></i></span>
+                        <span class=" corner text-white mx-3"><i class="fa-solid fa-question"></i></span>
+                        <span class=" corner text-white mx-3">List Your Property</span>
+                        <button class=" corner_btn btn btn-light text-primary"> Register</button>
+                        <button class=" corner_btn btn btn-light text-primary"> Sign in</button>
+                    </div>
+
+                    <!-- display after screen size get less then 1020-->
+                    <div class="small_screen">
+                        <i class="fa-solid fa-user text-white mx-3 "></i>
+                        <i class="fa-solid fa-bars text-white mx-3 "></i>
+                    </div>
+
+                </div>
+
+                <!-- for link bar (stay flight car rebtal attrection taxi)-->
+                <div class="margin12" style="width: 800px; height: 50px;  margin-top: 20px;">
+
+                    <a href="" class="nav_bar_1st_link py-2 px-2  text-decoration-none border border-light rounded-pill
+                                        text-center text-white">
+                        <i class="fa-solid fa-cart-flatbed px-2 "></i> stay </a>
+
+                    <a href="" class="nav_bar_1st_link py-2 px-2  text-decoration-none rounded-pill
+                                        text-center text-white">
+                        <i class="fa-solid fa-plane px-2 "></i> Flight </a>
+
+                    <a href="" class="nav_bar_1st_link py-2 px-2  text-decoration-none rounded-pill
+                                        text-center text-white">
+                        <i class="fa-solid fa-car px-2 "></i> Car rentals </a>
+
+                    <a href="" class="nav_bar_1st_link py-2 px-2  text-decoration-none rounded-pill
+                                        text-center text-white">
+                        <i class="fa-solid fa-cannabis px-2 "></i> Attraction </a>
+
+                    <a href="" class="nav_bar_1st_link py-2 px-2  text-decoration-none rounded-pill
+                                        text-center text-white">
+                        <i class=" px-2 "></i> Airport Taxies </a>
+
+                </div>
+
+                <br><br><br>
+                <h1 class=" text-white margin12">Find your next stay</h1>
+                <p class=" fs-4 text-white margin12">
+                    search low price on hotel, homes and muc more</p>
+            </nav>
+            <br><br>
+            <!-- highlighted row -->
+            <div class=" highlited_box row margin12   ">
+
+                <div
+                    class="py-1 bg-light col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  border border-4 border-warning rounded">
+                    <i class="fa-solid fa-cart-flatbed "></i> Where are you going?
+                </div>
+
+                <div
+                    class=" py-1 bg-light col-sm-12 col-md-12 col-lg-4 col-xl-4 border border-4 border-warning rounded ">
+                    <i class="fa-solid fa-calendar-days"></i> check in ... __ check out
+                </div>
+
+                <div
+                    class=" py-1 bg-light col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 border border-4 border-warning rounded">
+                    <i class="fa-regular fa-user"></i> 2 adult 0 chilren
+                </div>
+
+                <div
+                    class="d-grid bg-primary  col-12 col-sm-12 col-md-12 col-lg-1 col-xl-1 border border-4 border-warning rounded">
+                    <button type="button" class="btn btn-primary bg-primary ">search</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- nav bar ended here (Blue Rea)-->
+        <br><br>
+
+        <!-- text area (class use for it main container)-->
+        <div class="main_container margin12 ">
+            <form>
+                <input type="checkbox" name="check box" value="">
+                <label> I am travling for work</label>
+            </form>
+            <br><br>
+            <h3>Offers</h3>
+            <p>Promotions, deals and special offers for you</p>
+
+            <div class="image row " >
+
+                <div class=" col-sm-12 col-md-12 col-lg-6 col-xl-6 " >
+
+                    <img src="2-row-card-1-pic.jpg" style="width: 130px; height: 150px;" class="float-end ">
+                    <h4>Take your longest holiday yet</h4>
+                    <p>Browse properties offering long-term stays, many at reduced monthly rates.</p>
+                    <button type="button" class="btn btn-primary">Find a stay</button>
+                </div>
+
+                <div class="horizontal_row col-6 ms-3">
+                    <h4> New year, new adventures</h4>
+                       <p> Save 15% or more when you book and stay before 1 April 2024</p><br>
+                       <button type="button" class="btn btn-primary"> Find Early 2024 Deals</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

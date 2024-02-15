@@ -15,7 +15,8 @@
     height: 80%;
     background-color: rgb(61, 61, 231);
 }
-.booking{
+
+.booking {
     display: flex;
     justify-content: space-around;
 }
@@ -31,18 +32,21 @@
     background-color: rgb(47, 47, 165);
 }
 
-.small_screen{ display: none;}
-
-.nav_bar_1st_link:hover{
-    background-color: rgb(47, 47, 165); 
+.small_screen {
+    display: none;
 }
-.margin12{
+
+.nav_bar_1st_link:hover {
+    background-color: rgb(47, 47, 165);
+}
+
+.margin12 {
     margin-left: 12%;
 }
 
 .highlited_box {
- 
-     align-items: center;
+
+    align-items: center;
     width: 80%;
     height: 30px;
     /* border: 1px solid rgb(234, 166, 18);  */
@@ -50,51 +54,69 @@
 }
 
 /* for main part of website*/
-.main_container{
-    width: 80%;
-   min-height: 500px;
+.main_container {
+    width: 1200px;
+    min-height: 500px;
+    border: 2px solid brown;
 }
 
 /* for 2 colum horizontal row*/
 .horizontal_row {
-background-image: url(2-row-card-2-pic.webp);
-width: 48%;
-height: 150px;
-color: white
+    background-image: url(2-row-card-2-pic.webp);
+    width: 450px;
+    height: 150px;
+    color: white
 }
 
-@media (max-width: 1020px){
+@media (max-width: 1020px) {
 
-    .small_screen{ display: block;}
+    .small_screen {
+        display: block;
+    }
 
-    .corner,.corner_btn{ display: none;}
+    .corner,
+    .corner_btn {
+        display: none;
+    }
 }
 
-@media (max-width: 990px){
-    .main_container{ margin-top: 120px;
+@media (max-width: 990px) {
+    .main_container {
+        margin-top: 100px;
         width: 100%;
     }
 
-    .horizontal_row {display: none;}
+    .disappear{ display: none;}
+
 }
 
-@media (max-width: 550px){
-    .image>div>p{ display: none;}
+    @media (max-width: 1200px) 
+{
+    .horizontal_row {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .image>div>p {
+        display: none;
+    }
 }
 
 
-@media (max-width: 1200px){
-.booking{
-    display: flex;
-    justify-content: space-between;
-}
-.margin12{
-  margin-left: 5px;
-  /* margin-right: 5px;*/
-}
+@media (max-width: 1200px) {
+    .booking {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.highlited_box {
-    width: 98%;
-}
+    .margin12 {
+        margin-left: 5px;
+        /* margin-right: 5px;*/
+    }
+
+    .highlited_box {
+        width: 98%;
+    }
 
 }

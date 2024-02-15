@@ -40,9 +40,21 @@
 
                     <!-- top row (right side)  PKR Flage ? Register and sign in button -->
                     <div class=" right_side">
-                        <span class=" corner text-white mx-3"> PKR</span>
-                        <span class=" corner text-white mx-3 "><i class="fa-solid fa-certificate"></i></span>
-                        <span class=" corner text-white mx-3"><i class="fa-solid fa-question"></i></span>
+
+                        <span class=" corner text-white mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="select yout currancy">
+                            PKR
+                        </span>
+
+                        <span class=" corner text-white mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="select yout language">
+                            <i class="fa-solid fa-certificate"></i>
+                        </span>
+
+                        <span class=" corner text-white mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Contact Coustomer Service">
+                        <i class="fa-solid fa-question"></i>
+                        </span>
                         <span class=" corner text-white mx-3">List Your Property</span>
                         <button class=" corner_btn btn btn-light text-primary"> Register</button>
                         <button class=" corner_btn btn btn-light text-primary"> Sign in</button>
@@ -119,7 +131,7 @@
 
         <!-- text area (class use for it main container)  ---- Main Container Start-->
         <div class="main_container margin12 border border-dark">
-            
+
             <!-- for check box-->
             <form>
                 <input type="checkbox" name="check box" value="">
@@ -127,7 +139,7 @@
             </form>
 
             <br><br>
-            
+
             <h3>Offers</h3>
             <p>Promotions, deals and special offers for you</p>
 
@@ -137,17 +149,18 @@
                 <div class=" col-sm-12 col-md-6 col-lg-6 col-xl-6">
 
                     <!--card-1-->
-                    <div class="card " >
+                    <div class="card ">
                         <div class="row">
 
                             <!--card-1 text area / card body (left side)-->
                             <div class="col-9">
                                 <div class="card-body ">
                                     <h3>Take your longest holiday yet</h3>
-                                    <p class="disappear">Browse properties offering long-term stays, many at reduced monthly rates.</p>
+                                    <p class="disappear">Browse properties offering long-term stays, many at reduced
+                                        monthly rates.</p>
                                     <button type="button" class="btn btn-primary">Find a Stay</button>
                                 </div>
-                                
+
                             </div>
 
                             <!-- card-1 image area (right side)-->
@@ -177,12 +190,31 @@
             </div>
 
 
-        
-        <!-- Main Container Ends here-->
+
+            <!-- Main Container Ends here-->
         </div>
 
         <!-- screen Size box ends here -->
     </div>
+
+
+
+
+    <!-- <div class="container mt-3">
+        <h3>Tooltip Example</h3>
+        
+        <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hooray!">
+          Hover over me!
+        </button>
+      </div> -->
+
+    <!-- for tooltip -->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 
 </body>
 
